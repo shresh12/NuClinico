@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuClinico.Meals">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="#0099ff">
+                <Label Text="Meals" TextColor="White" FontAttributes="Bold"
+                       FontSize="{OnIdiom Phone=20, Tablet=35}" HorizontalTextAlignment="Center"/>
+            </Frame>
+            <Frame>
+                <DatePicker FontSize="{OnIdiom Phone=15, Tablet=25}"></DatePicker>
+            </Frame>
+            <StackLayout >
+                <Label Text="To edit your meals, find the meal below by scrolling to the right and click Edit. To find a meal on a previous day use the arrow next to the date or the calender icon above to pick the day you logged the meal."
+                     HorizontalTextAlignment="Center"
+                  Margin="15,30,15,30" FontSize="{OnIdiom Phone=20, Tablet=35}" TextColor="Black"/>
+                
+                
+
+
+
+            </StackLayout>
+            <Image Source="1" HeightRequest="{OnIdiom 50, Phone=50, Tablet=100}" Margin="0,100,0,0"/>
+            <Label Text="No Meals found" HorizontalTextAlignment="Center"
+                       />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

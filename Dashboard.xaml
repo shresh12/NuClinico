@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuClinico.Dashboard"
+             BackgroundColor="White">
+    <ScrollView>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Frame BackgroundColor="#0099ff">
+            <Label Text="DASHBOARD" FontSize="{OnIdiom Phone=20, Tablet=35}" TextColor="White"
+                           HorizontalTextAlignment="Center" FontAttributes="bold"/>
+        </Frame>
+
+        <StackLayout Grid.Row="1" Margin="0,0">
+            <StackLayout.Margin>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>0,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>20,20</OnIdiom.Tablet>
+
+                </OnIdiom>
+            </StackLayout.Margin>
+            <Label Text="Welcome to NuClinico&#x0a;Click Add Meal to log a new meal or Edit Meal to update a previously logged meal."
+                       HorizontalTextAlignment="Center" FontSize="{OnIdiom Phone=20, Tablet=35}" Padding="10" TextColor="Black"/>
+        </StackLayout>
+
+        <Grid Grid.Row="2" ColumnSpacing="0" Margin="10,100,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Frame Grid.Column="0" BackgroundColor="#0099ff" HeightRequest="60" CornerRadius="2" WidthRequest="60" >
+                <Label Text="Add Meals" TextColor="White" FontSize="{OnIdiom Phone=18, Tablet=22}" FontAttributes="Bold"/>
+            </Frame>
+
+            <Frame Grid.Column="1" BorderColor="LightGray">
+                <Label Text="Add new Meal&#x0a;Click here to add meal entry"
+                       TextColor="Black" FontSize="{OnIdiom Phone=18, Tablet=22}"/>
+            </Frame>
+        </Grid>
+
+        <Grid Grid.Row="3" ColumnSpacing="0" Margin="10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Frame Grid.Column="0" BackgroundColor="#0099ff" HeightRequest="60" CornerRadius="2" WidthRequest="60" >
+                <Label Text="Edit Meals" TextColor="White" FontSize="{OnIdiom Phone=18, Tablet=22}" FontAttributes="Bold"/>
+            </Frame>
+
+            <Frame Grid.Column="1" BorderColor="LightGray">
+                <Label Text="Edit Meal&#x0a;Click here to edit your meals"
+                       TextColor="Black" FontSize="{OnIdiom Phone=18, Tablet=22}"/>
+            </Frame>
+        </Grid>
+
+        <Grid Grid.Row="4" ColumnSpacing="0" Margin="10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Frame Grid.Column="0" BackgroundColor="#0099ff" HeightRequest="60" CornerRadius="2" WidthRequest="60" >
+                <Label Text="FAQ" TextColor="White" FontSize="{OnIdiom Phone=18, Tablet=22}" FontAttributes="Bold"/>
+            </Frame>
+
+            <Frame Grid.Column="1" BorderColor="LightGray">
+                <Label Text="Frequently Asked Questions&#x0a;Have questions?"
+                       TextColor="Black" FontSize="{OnIdiom Phone=18, Tablet=22}"/>
+            </Frame>
+        </Grid>
+
+        <Grid Grid.Row="5" ColumnSpacing="0" Margin="10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Frame Grid.Column="0" BackgroundColor="#0099ff" HeightRequest="60" CornerRadius="2" WidthRequest="60">
+                <Label Text="Support" TextColor="White" FontSize="{OnIdiom Phone=16, Tablet=16}" FontAttributes="Bold" Padding="0"/>
+            </Frame>
+
+            <Frame Grid.Column="1" BorderColor="LightGray">
+                <Label Text="Add new Meal&#x0a;Click here to add meal entry"
+                       TextColor="Black" FontSize="{OnIdiom Phone=18, Tablet=22}"/>
+            </Frame>
+        </Grid>
+    </Grid>
+    </ScrollView>
+</ContentPage>

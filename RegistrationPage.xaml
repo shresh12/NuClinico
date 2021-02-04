@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuClinico.RegistrationPage"
+             BackgroundColor="#0099ff">
+    <ContentPage.Content>
+
+    <StackLayout>
+    <Grid>
+    <StackLayout Padding="0" Margin="{OnIdiom 15, Phone=15, Tablet=95}" HorizontalOptions="FillAndExpand">
+    <Image Source="logo1" WidthRequest="100" HorizontalOptions="CenterAndExpand"/>
+    <Label Text="Register new account" HorizontalOptions="CenterAndExpand" TextColor="White"
+           FontSize="{OnIdiom Phone=20, Tablet=35}"/>
+    </StackLayout>
+    <StackLayout Padding="0" Margin="10,190,10,0" HorizontalOptions="FillAndExpand">
+                    <StackLayout.Margin>
+                        <OnIdiom x:TypeArguments="Thickness">
+                            <OnIdiom.Phone>10,190,10,0</OnIdiom.Phone>
+                            <OnIdiom.Tablet>20,300,20,0</OnIdiom.Tablet>
+                            
+                        </OnIdiom>
+                    </StackLayout.Margin>
+                    <Frame  BackgroundColor="White" HeightRequest="350" Padding="0" Margin="0" CornerRadius="10">
+    <StackLayout>
+
+                            <StackLayout Padding="0" Margin="15,30">
+                                <Frame BackgroundColor="White" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="0">
+                                    <StackLayout Orientation="Horizontal">
+
+
+                                        <Entry Placeholder="Email" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               FontSize="{OnIdiom Phone=20, Tablet=35}"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+
+
+                                        <Entry Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               FontSize="{OnIdiom Phone=20, Tablet=35}"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <StackLayout Margin="50,30,50,0">
+                                    <StackLayout.Margin>
+                                        <OnIdiom x:TypeArguments="Thickness">
+                                            <OnIdiom.Phone>50,30,50,0</OnIdiom.Phone>
+                                            <OnIdiom.Tablet>90,40,90,0</OnIdiom.Tablet>
+
+                                        </OnIdiom>
+                                    </StackLayout.Margin>
+                                    <Button Text="REGISTER" BackgroundColor="LightGray" TextColor="White" CornerRadius="30"
+                                          FontSize="{OnIdiom Phone=20, Tablet=24}" FontAttributes="Bold"  />
+                                </StackLayout>
+
+                                <StackLayout Margin="22">
+                                    <Label Text="I ALREADY HAVE AN ACCOUNT" HorizontalOptions="CenterAndExpand" TextColor="#0099ff"/>
+                                </StackLayout>
+
+
+
+
+
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>

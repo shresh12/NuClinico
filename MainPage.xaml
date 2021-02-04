@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuClinico.MainPage"
+             BackgroundColor="#0099ff">
+
+    <StackLayout Margin="{OnIdiom 80, Phone=80, Tablet=120}" Spacing="0">
+
+        <Image Source="logo1" WidthRequest="{OnIdiom 100,Phone=100, Tablet=200}" VerticalOptions="CenterAndExpand" />
+        <Label Text="NuClinico" HorizontalTextAlignment="Center" Padding="0,0,0,10"
+               FontSize="20" TextColor="White" FontAttributes="Bold"/>
+        <Label Text="Nutrition reimagined." HorizontalTextAlignment="Center" 
+               TextColor="White"
+               FontSize="20" FontAttributes="Bold"/>
+
+        <StackLayout VerticalOptions="EndAndExpand" Spacing="2">
+            <Label Text="New to NuClininco?" TextColor="White" FontSize="15" 
+               HorizontalOptions="Center" />
+            <Button Text="REGISTER" CornerRadius="25"  BackgroundColor="White"
+                BorderColor="Black" BorderWidth="1" TextColor="Black"
+                Margin="8" Clicked="NavigateButton_OnClicked"/>
+        </StackLayout>
+
+        <StackLayout Spacing="2">
+        <Label Text="Already registered?" TextColor="White"
+               FontSize="15" HorizontalOptions="Center" />
+        <Button Text="LOG-IN" CornerRadius="25" Margin="10" BackgroundColor="White"
+                BorderColor="Black" BorderWidth="1" TextColor="Black"
+                Clicked="Navigate_OnClicked"/>
+        </StackLayout>
+
+    </StackLayout>  </ContentPage>
